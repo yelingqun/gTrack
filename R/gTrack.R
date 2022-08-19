@@ -3145,6 +3145,7 @@ draw.grl = function(grl,
         {
           if (is.null(y) | !is.null(ylim.subplot))
           {
+            print(grl.segs)
             #pos1  = aggregate(formula = pos1 ~ group, data = grl.segs, FUN = min);
             pos1  = aggregate(formula = as.formula(paste("pos1", "group", sep = "~")), data = grl.segs, FUN = min);
             #pos2  = aggregate(formula = pos2 ~ group, data = grl.segs, FUN = max);
